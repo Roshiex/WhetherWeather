@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(180deg, #fdf2f8, #eef2ff);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  width: 130px;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: #5b4b8a;
+}
+
+.subtitle {
+  color: #8b7fbf;
+}
+
+.card {
+  border-radius: 26px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s ease;
+}
+
+
+.weather-icon {
+  width: 56px;
+  margin: 0.5rem auto;
+}
+
+.footer {
+  background: #fff0f7;
+  border-radius: 40px 40px 0 0;
+  margin-top: 4rem;
+}
+
+a {
+  color: inherit;
+}

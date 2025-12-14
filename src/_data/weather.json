@@ -1,0 +1,105 @@
+{
+  "cities": [
+    {
+      "name": "Kilkenny",
+      "slug": "kilkenny",
+      "country": "Ireland",
+      "today": { "condition": "overcast", "maxTempC": 10, "maxWindKmh": 23 },
+      "currentHour": { "tempC": 9, "windKmh": 20 },
+      "forecast": [
+        { "day": "Mon", "condition": "rain", "maxTempC": 10, "maxWindKmh": 22 },
+        { "day": "Tue", "condition": "sunny", "maxTempC": 11, "maxWindKmh": 18 },
+        { "day": "Wed", "condition": "rain", "maxTempC": 11, "maxWindKmh": 20 },
+        { "day": "Thu", "condition": "sunny", "maxTempC": 19, "maxWindKmh": 18 },
+        { "day": "Fri", "condition": "storm", "maxTempC": 13, "maxWindKmh": 45 },
+        { "day": "Sat", "condition": "rain", "maxTempC": 15, "maxWindKmh": 25 },
+        { "day": "Sun", "condition": "cloudy", "maxTempC": 17, "maxWindKmh": 22 }
+      ]
+    },
+
+    {
+      "name": "Amsterdam",
+      "slug": "amsterdam",
+      "country": "Netherlands",
+      "today": { "condition": "cloudy", "maxTempC": 12, "maxWindKmh": 16 },
+      "currentHour": { "tempC": 11, "windKmh": 16 },
+      "forecast": [
+        { "day": "Mon", "condition": "rain", "maxTempC": 10 },
+        { "day": "Tue", "condition": "cloudy", "maxTempC": 11 },
+        { "day": "Wed", "condition": "sunny", "maxTempC": 9 },
+        { "day": "Thu", "condition": "cloudy", "maxTempC": 13 },
+        { "day": "Fri", "condition": "rain", "maxTempC": 9 },
+        { "day": "Sat", "condition": "sunny", "maxTempC": 10 },
+        { "day": "Sun", "condition": "cloudy", "maxTempC": 13 }
+      ]
+    },
+
+    {
+      "name": "Paris",
+      "slug": "paris",
+      "country": "France",
+      "today": { "condition": "sunny", "maxTempC": 12, "maxWindKmh": 10 },
+      "currentHour": { "tempC": 11, "windKmh": 8 },
+      "forecast": [
+        { "day": "Mon", "condition": "sunny", "maxTempC": 12 },
+        { "day": "Tue", "condition": "cloudy", "maxTempC": 12 },
+        { "day": "Wed", "condition": "rain", "maxTempC": 7 },
+        { "day": "Thu", "condition": "sunny", "maxTempC": 11 },
+        { "day": "Fri", "condition": "cloudy", "maxTempC": 14 },
+        { "day": "Sat", "condition": "sunny", "maxTempC": 10 },
+        { "day": "Sun", "condition": "cloudy", "maxTempC": 12 }
+      ]
+    },
+
+    {
+      "name": "Toronto",
+      "slug": "toronto",
+      "country": "Canada",
+      "today": { "condition": "cloudy", "maxTempC": -1, "maxWindKmh": 26 },
+      "currentHour": { "tempC": -1, "windKmh": 16 },
+      "forecast": [
+        { "day": "Mon", "condition": "snow", "maxTempC": -4 },
+        { "day": "Tue", "condition": "cloudy", "maxTempC": 2 },
+        { "day": "Wed", "condition": "cloudy", "maxTempC": 4 },
+        { "day": "Thu", "condition": "rain", "maxTempC": 6 },
+        { "day": "Fri", "condition": "sunny", "maxTempC": -1 },
+        { "day": "Sat", "condition": "cloudy", "maxTempC": -1 },
+        { "day": "Sun", "condition": "snow", "maxTempC": -7 }
+      ]
+    },
+
+    {
+      "name": "Saalbach",
+      "slug": "saalbach",
+      "country": "Austria",
+      "today": { "condition": "cloudy", "maxTempC": 7, "maxWindKmh": 2 },
+      "currentHour": { "tempC": 5, "windKmh": 2 },
+      "forecast": [
+        { "day": "Mon", "condition": "sunny", "maxTempC": 7 },
+        { "day": "Tue", "condition": "cloudy", "maxTempC": 5 },
+        { "day": "Wed", "condition": "cloudy", "maxTempC": 4 },
+        { "day": "Thu", "condition": "rain", "maxTempC": 6 },
+        { "day": "Fri", "condition": "cloudy", "maxTempC": 7 },
+        { "day": "Sat", "condition": "cloudy", "maxTempC": 8 },
+        { "day": "Sun", "condition": "sunny", "maxTempC": 6 }
+      ]
+    },
+
+    {
+      "name": "Cape Town",
+      "slug": "cape-town",
+      "country": "South Africa",
+      "today": { "condition": "cloudy", "maxTempC": 19, "maxWindKmh": 14 },
+      "currentHour": { "tempC": 18, "windKmh": 12 },
+      "forecast": [
+        { "day": "Mon", "condition": "sunny", "maxTempC": 23 },
+        { "day": "Tue", "condition": "cloudy", "maxTempC": 22 },
+        { "day": "Wed", "condition": "cloudy", "maxTempC": 19 },
+        { "day": "Thu", "condition": "sunny", "maxTempC": 21 },
+        { "day": "Fri", "condition": "sunny", "maxTempC": 26 },
+        { "day": "Sat", "condition": "cloudy", "maxTempC": 18 },
+        { "day": "Sun", "condition": "sunny", "maxTempC": 21 }
+      ]
+    }
+  ]
+}

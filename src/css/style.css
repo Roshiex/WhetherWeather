@@ -1,0 +1,19 @@
+body {
+  background: #f7f1ff;      /* pastel lavender */
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cute cards */
+.card {
+  background: #fff7fc;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Cute rounded containers */
+.box {
+  border-radius: 20px;
+}
+
