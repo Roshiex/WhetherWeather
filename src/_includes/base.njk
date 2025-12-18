@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title or "Weather Dashboard" }}</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+
+  <style>
+
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+  .app-header {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 3rem;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.header-spacer {
+  width: 1px; 
+}
+
+    .logo {
+      width: 190px;           
+      height: auto;
+    }
+
+    .app-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #c7d2fe;
+      letter-spacing: 0.05em;
+    }
+
+   
+    .card {
+      background-color: #1e1b4b;
+      border-radius: 18px;
+      color: #eef2ff;
+      padding: 1.75rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .weather-icon {
+      width: 64px;
+      height: auto;
+      margin: 0.75rem auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<header class="app-header">
+  <a href="/" class="logo-link">
+    <img
+      src="/images/logo.png"
+      alt="Whether Weather logo"
+      class="logo"
+      >
+    <span class="app-title">Whether Weather</span>
+  </a>
+
+  <div class="header-spacer"></div>
+</header>
+
+
+ 
+   
+  {{ content | safe }}
+
+</body>
+</html>

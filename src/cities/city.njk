@@ -1,11 +1,13 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 pagination:
-  data: weather.cities
+  data: "cities.cities"
   size: 1
   alias: city
-permalink: "cities/{{ city.slug }}/index.html"
+permalink: "/cities/{{ city.slug }}/index.html"
 ---
+
+
 
 <section class="section">
   <div class="container">

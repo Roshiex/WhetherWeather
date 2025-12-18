@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whether Weather</title>
+
+  <!-- Bulma -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+
+  <style>
+
+    body {
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+
+  .app-header {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 3rem;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.header-spacer {
+  width: 1px; 
+}
+
+    .logo {
+      width: 190px;           
+      height: auto;
+    }
+
+    .app-title {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #c7d2fe;
+      letter-spacing: 0.05em;
+    }
+
+   
+    .card {
+      background-color: #1e1b4b;
+      border-radius: 18px;
+      color: #eef2ff;
+      padding: 1.75rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .weather-icon {
+      width: 64px;
+      height: auto;
+      margin: 0.75rem auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<header class="app-header">
+  <a href="/" class="logo-link">
+    <img
+      src="/images/logo.png"
+      alt="Whether Weather logo"
+      class="logo"
+      >
+    <span class="app-title">Whether Weather</span>
+  </a>
+
+  <div class="header-spacer"></div>
+</header>
+
+
+ 
+   
+  
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-multiline is-centered">
+
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/kilkenny/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Kilkenny
+            </p>
+
+            <img
+              src="/images/rainy-day.png"
+              alt="rainy-day"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              10°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/amsterdam/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Amsterdam
+            </p>
+
+            <img
+              src="/images/cloudy.png"
+              alt="cloudy"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              12°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/paris/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Paris
+            </p>
+
+            <img
+              src="/images/sun.png"
+              alt="sun"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              12°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/toronto/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Toronto
+            </p>
+
+            <img
+              src="/images/cloudy.png"
+              alt="cloudy"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              -1°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/saalbach/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Saalbach
+            </p>
+
+            <img
+              src="/images/cloudy.png"
+              alt="cloudy"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              7°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+      <div class="column is-one-third">
+
+        <a href="/cities/cape-town/">
+          <div class="card has-text-centered">
+
+            <p class="title is-4 has-text-light mb-2">
+              Cape Town
+            </p>
+
+            <img
+              src="/images/cloudy.png"
+              alt="cloudy"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              19°C
+            </p>
+
+          </div>
+        </a>
+
+      </div>
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>

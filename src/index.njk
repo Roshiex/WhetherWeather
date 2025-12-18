@@ -1,34 +1,40 @@
 ---
-layout: layouts/base.njk
-title: Weather Dashboard
+layout: base.njk
+title: Whether Weather
 ---
 
 <section class="section">
   <div class="container">
-    <div class="columns is-multiline">
 
-      {% for city in weather.cities %}
+    <div class="columns is-multiline is-centered">
+
+      {% for city in cities.cities %}
       <div class="column is-one-third">
+
         <a href="/cities/{{ city.slug }}/">
           <div class="card has-text-centered">
-            <div class="card-content">
-              <p class="title is-4">{{ city.name }}</p>
 
-              <img
-                src="/images/{{ city.today.condition }}.png"
-                alt="{{ city.today.condition }}"
-                class="weather-icon"
-              >
+            <p class="title is-4 has-text-light mb-2">
+              {{ city.name }}
+            </p>
 
-              <p class="subtitle">
-                {{ city.today.maxTempC }}°C
-              </p>
-            </div>
+            <img
+              src="/images/{{ city.today.condition }}.png"
+              alt="{{ city.today.condition }}"
+              class="weather-icon"
+            >
+
+            <p class="is-size-3 has-text-weight-bold">
+              {{ city.today.maxTempC }}°C
+            </p>
+
           </div>
         </a>
+
       </div>
       {% endfor %}
 
     </div>
+
   </div>
 </section>
