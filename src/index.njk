@@ -1,9 +1,13 @@
 ---
 layout: base.njk
-title: Whether Weather
+title: Home
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
 
-<section class="section">
+
+<section class="section" style="margin-top: 3rem;">
   <div class="container">
 
     <div class="columns is-multiline is-centered">
@@ -12,8 +16,9 @@ title: Whether Weather
       <div class="column is-one-third">
 
         <a href="/cities/{{ city.slug }}/">
-          <div class="card has-text-centered">
-
+          <div
+            class="weather-card has-text-centered"
+          >
             <p class="title is-4 has-text-light mb-2">
               {{ city.name }}
             </p>
@@ -27,7 +32,6 @@ title: Whether Weather
             <p class="is-size-3 has-text-weight-bold">
               {{ city.today.maxTempC }}°C
             </p>
-
           </div>
         </a>
 

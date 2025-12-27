@@ -5,41 +5,88 @@ pagination:
   size: 1
   alias: city
 permalink: "/cities/{{ city.slug }}/index.html"
+eleventyExcludeFromCollections: true
 ---
+
+{% set colourMap = {
+  "sun": "#4FC3F7",
+  "cloudy": "#81cef0",
+  "rainy-day": "#769ca8",
+  "snow": "#a1adb3",
+  "wind": "#3499c7",
+  "heavy-rain": "#3b464a"
+} %}
 
 <section class="section">
   <div class="container">
 
-    <h2 class="title has-text-centered">
+    <h2 class="title has-text-centered has-text-light mb-6">
       {{ city.name }}, {{ city.country }}
     </h2>
 
-    <div class="box has-text-centered">
-      <h3 class="subtitle">Today</h3>
-      <img src="/images/{{ city.today.condition }}.png" class="weather-icon">
-      <p>Max Temp: {{ city.today.maxTempC }}°C</p>
-      <p>Wind: {{ city.today.maxWindKmh }} km/h</p>
+    <!-- TODAY + CURRENT HOUR -->
+    <div class="today-row">
+
+      <div
+        class="today-card"
+        style="background-color: {{ colourMap[city.today.condition] }}"
+      >
+        <h3>Today</h3>
+        <img
+          src="/images/{{ city.today.condition }}.png"
+          class="weather-icon"
+        >
+        <p class="big-temp">
+          {{ city.today.maxTempC }}°C
+        </p>
+        <p class="small-text">
+          Wind: {{ city.today.maxWindKmh }} km/h
+        </p>
+      </div>
+
+      <div
+        class="today-card"
+        style="background-color: {{ colourMap[city.today.condition] }}"
+      >
+        <h3>Current Hour</h3>
+        <img
+          src="/images/{{ city.today.condition }}.png"
+          class="weather-icon"
+        >
+        <p class="big-temp">
+          {{ city.currentHour.tempC }}°C
+        </p>
+        <p class="small-text">
+          Wind: {{ city.currentHour.windKmh }} km/h
+        </p>
+      </div>
+
     </div>
 
-    <div class="box has-text-centered">
-      <h3 class="subtitle">Current Hour</h3>
-      <p>{{ city.currentHour.tempC }}°C</p>
-      <p>{{ city.currentHour.windKmh }} km/h</p>
-    </div>
-
-    <h3 class="subtitle has-text-centered mt-5">
+    <!-- WEEKLY FORECAST -->
+    <h3 class="subtitle has-text-centered has-text-light mt-5">
       Weekly Forecast
     </h3>
 
-    <div class="columns is-mobile is-multiline">
+    <div class="columns is-mobile is-multiline is-centered">
       {% for day in city.forecast %}
       <div class="column is-one-seventh">
-        <div class="card has-text-centered">
-          <div class="card-content p-3">
-            <p class="title is-6">{{ day.day }}</p>
-            <img src="/images/{{ day.condition }}.png" class="weather-icon">
-            <p class="subtitle is-6">{{ day.maxTempC }}°C</p>
-          </div>
+        <div
+          class="forecast-card"
+          style="background-color: {{ colourMap[day.condition] }}"
+        >
+          <p class="title is-6">
+            {{ day.day }}
+          </p>
+
+          <img
+            src="/images/{{ day.condition }}.png"
+            class="weather-icon"
+          >
+
+          <p class="subtitle is-6">
+            {{ day.maxTempC }}°C
+          </p>
         </div>
       </div>
       {% endfor %}

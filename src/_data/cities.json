@@ -4,6 +4,8 @@
       "name": "Kilkenny",
       "slug": "kilkenny",
       "country": "Ireland",
+      "sunrise": "08:41",
+      "sunset": "16.20",
       "today": { "condition": "rainy-day", "maxTempC": 10, "maxWindKmh": 23 },
       "currentHour": { "tempC": 9, "windKmh": 20 },
       "forecast": [
@@ -21,6 +23,8 @@
       "name": "Amsterdam",
       "slug": "amsterdam",
       "country": "Netherlands",
+      "sunrise": "08.50",
+      "sunset": "16.33",
       "today": { "condition": "cloudy", "maxTempC": 12, "maxWindKmh": 16 },
       "currentHour": { "tempC": 11, "windKmh": 16 },
       "forecast": [
@@ -38,6 +42,8 @@
       "name": "Paris",
       "slug": "paris",
       "country": "France",
+      "sunrise": "08.44",
+      "sunset": "17.00",
       "today": { "condition": "sun", "maxTempC": 12, "maxWindKmh": 10 },
       "currentHour": { "tempC": 11, "windKmh": 8 },
       "forecast": [
@@ -55,6 +61,8 @@
       "name": "Toronto",
       "slug": "toronto",
       "country": "Canada",
+      "sunrise": "07.50",
+      "sunset": "16.47",
       "today": { "condition": "cloudy", "maxTempC": -1, "maxWindKmh": 26 },
       "currentHour": { "tempC": -1, "windKmh": 16 },
       "forecast": [
@@ -72,6 +80,8 @@
       "name": "Saalbach",
       "slug": "saalbach",
       "country": "Austria",
+      "sunrise": "07.56",
+      "sunset": "16.25",
       "today": { "condition": "cloudy", "maxTempC": 7, "maxWindKmh": 2 },
       "currentHour": { "tempC": 5, "windKmh": 2 },
       "forecast": [
@@ -89,6 +99,8 @@
       "name": "Cape Town",
       "slug": "cape-town",
       "country": "South Africa",
+      "sunrise": "05.36",
+      "sunset": "19.59",
       "today": { "condition": "cloudy", "maxTempC": 19, "maxWindKmh": 14 },
       "currentHour": { "tempC": 18, "windKmh": 12 },
       "forecast": [

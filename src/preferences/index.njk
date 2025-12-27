@@ -1,4 +1,123 @@
 ---
 layout: base.njk
 title: Preferences
+eleventyNavigation:
+  key: Preferences
+  order: 2
 ---
+<section class="section">
+  <div class="container" style="max-width: 1200px;">
+
+    <h1 class="title has-text-centered has-text-light mb-6">
+      User Preferences
+    </h1>
+
+    <div class="columns is-variable is-6">
+
+      <!-- === cities === -->
+      <div class="column">
+        <div class="box has-background-info-light">
+          <h2 class="title is-5 has-text-centered">
+            Favourite Cities
+          </h2>
+
+          {% for city in ["Kilkenny","Amsterdam","Paris","Toronto","Saalbach","Cape Town"] %}
+          <div class="field">
+            <input
+              id="fav-{{ city | lower | replace(' ','') }}"
+              type="checkbox"
+              class="switch is-rounded is-success"
+              checked
+            >
+            <label for="fav-{{ city | lower | replace(' ','') }}">
+              {{ city }}
+            </label>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- ===== General Settings ===== -->
+      <div class="column">
+        <div class="box has-background-info-light">
+          <h2 class="title is-5 has-text-centered">
+            General Settings
+          </h2>
+
+          <div class="field">
+            <input id="darkmode" type="checkbox" class="switch is-rounded is-success">
+            <label for="darkmode">Dark Mode</label>
+          </div>
+
+          <div class="field">
+            <input id="celsius" type="checkbox" class="switch is-rounded is-success" checked>
+            <label for="celsius">Use Celsius</label>
+          </div>
+
+          <div class="field">
+            <input id="alerts" type="checkbox" class="switch is-rounded is-success">
+            <label for="alerts">Weather Alerts</label>
+          </div>
+
+          <div class="field">
+            <input id="autorefresh" type="checkbox" class="switch is-rounded is-success">
+            <label for="autorefresh">Auto Refresh</label>
+          </div>
+
+          <div class="field">
+            <input id="location" type="checkbox" class="switch is-rounded is-success">
+            <label for="location">Use Current Location</label>
+          </div>
+
+          <div class="field">
+            <input id="24-hour" type="checkbox" class="switch is-rounded is-success">
+            <label for="24-hour">24-Hour Time</label>
+          </div>
+
+        </div>
+      </div>
+
+        
+      <!-- ==== accessibility ==== -->
+      <div class="column">
+        <div class="box has-background-info-light">
+          <h2 class="title is-5 has-text-centered">
+            Accessibility
+          </h2>
+
+          <div class="field">
+            <input id="colourblind" type="checkbox" class="switch is-rounded is-success">
+            <label for="colourblind">Colourblind Mode</label>
+          </div>
+
+          <div class="field">
+            <input id="text120" type="checkbox" class="switch is-rounded is-success">
+            <label for="text120">Large Text (120%)</label>
+          </div>
+
+          <div class="field">
+            <input id="text150" type="checkbox" class="switch is-rounded is-success">
+            <label for="text150">Extra Large Text (150%)</label>
+          </div>
+
+          <div class="field">
+            <input id="reduceMotion" type="checkbox" class="switch is-rounded is-success">
+            <label for="reduceMotion">Reduce Motion</label>
+          </div>
+
+          <div class="field">
+            <input id="highcontrast" type="checkbox" class="switch is-rounded is-success">
+            <label for="highcontrast">High Contrast</label>
+          </div>
+
+          <div class="field">
+            <input id="font" type="checkbox" class="switch is-rounded is-success">
+            <label for="font">Readable Font</label>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
